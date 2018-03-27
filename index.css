@@ -1,0 +1,352 @@
+body {
+	margin: 0;
+	padding: 0;
+    
+     background-color: #3287DC;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 0.2vw;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	background-image: url(bluehand.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 8vh;
+	margin-bottom: 1%;
+	text-decoration-style: solid;
+}
+
+h1 {
+padding-left: 2%;
+}
+
+.text{
+padding-left: 2%;	
+}
+
+.text2{
+padding-left: 2%;	
+}
+
+.text3{
+padding-left: 2%;
+}
+
+
+.card {
+	
+	background-color:#22013d;
+	background-repeat: no-repeat;
+	background-size:cover;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px 2px #35eea4;
+    display: flex;
+    flex-direction: column;
+	
+}
+
+.card .heading1 {
+    color: #928adb;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding: 5vw;
+	align-content: center;
+}
+
+.card .sub-heading {
+    color: #35eea4;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0 5vw 2vw;
+}
+
+
+
+
+
+/* colors flex wrap*/
+.sub-part-row {
+    display: flex;
+   flex-wrap: wrap;
+    width: 100%;
+   background-color: #D8D8D8;
+	padding-top: 1%;
+}
+
+.container-item {
+
+    height: 500px;
+}
+
+
+.heading{
+	color: cyan;
+	text-decoration: underline;
+	text-decoration-style:dashed;
+	
+}
+
+
+.text {
+	font-size: 2.3vw;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	
+}
+
+.text2{
+	font-size: 2.3vw;
+    font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+}
+
+.text3{
+	font-size: 2.3vw;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+}
+
+
+
+.sub-part-row .whoami .button {
+	padding-top: 15%;
+	padding-left: 12%;
+}
+ 
+.sub-part-row .exploremore .button2 {
+  	padding-top: 3%;
+	padding-left: 30%;
+}
+
+.sub-part-row .projects .button3 {
+	padding-top: 0.5%;
+	padding-left: 30%;
+}
+
+
+
+
+button{
+   background-image: url(Background-Website.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: none;
+    border-radius: 5px;
+    color: #35eea4;
+    font-family: "Istok Web", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 8px;
+    margin-top: 2vh;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: box-shadow 0.1s linear 0.1s;
+	
+}
+
+ button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 yellow;
+}
+
+.whoami {
+
+	background-color:#260225;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.exploremore {
+	background-color:#c111bc;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.aboutme {
+    background-color:#dd0b43;
+	
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.projects {
+	background-color:#251251;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.icon-group{
+	display: flex;
+	justify-content:center;
+    height: 14vh;
+}
+
+.icon {
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+ .header a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+	
+/*media queries used to change the layout*/
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .whoami {
+        width: 50%;
+    }
+    .aboutme {
+        width: 50%;
+    }
+    .exploremore {
+
+        width: 50%;
+    }
+    .projects {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+
+    .whoami {
+        width: 100%;
+    }
+	
+    .aboutme {
+        width: 100%;
+    }
+    .projects {
+        width: 100%;
+    }
+}
+
+.sub-part-row .image-size{
+	width: 65%;
+	height: 60vh;
+	padding-left: 20%;
+	padding-bottom: 0.5%;
+	padding-top: 1%;
+	
+}
+
+@media only screen and (max-width: 767px) {             
+    .sub-part-row {
+        flex-direction: column;
+    }
+	
+   .sub-part-row .aboutme {
+        order: -1;
+	   display: flex;
+	   justify-content: center;
+    }
+	
+   .sub-part-row .image-size {
+        width: 80vw;
+	    padding-left: 28px;
+    }
+	
+	.text{
+		font-size: 28px;
+	}
+	.text2{
+		font-size: 26px;
+	}
+	.text3{
+		font-size: 23px;
+	}
+	
+	.button2{
+		padding-right: 3%;
+	}
+	.button3{
+		padding-right: 3%;
+	}
+	
+	.image-size{
+		padding-right: 5%;
+	}
+
+	
+
+	
+}
+@media screen and (max-width: 475px) {
+	.icon{
+		width: 20%;
+	}
+}
+	@media screen and (max-width: 1200px) {   /*1466*/
+	.aboutme{
+		background-image: url(scuffedstatic_dark1400x900.jpg);
+	}
+}
+	
+	
+	@media only screen and (max-width: 488px) {  
+	
+	 .sub-part-row .whoami .button{
+			padding-bottom: 15%;
+		}
+	.sub-part-row .exploremore .button2  {
+			padding-bottom: 15%;
+		}
+		.sub-part-row .projects .button3{
+			padding-bottom: 15%;
+		}
+	
+	}
+
+
+@media screen and (min-width: 707px) and (max-width: 1122px){
+	.sub-part-row .whoami .text{
+		font-size: 25px;
+	}
+	.sub-part-row .exploremore .text2{
+		font-size: 25px;
+	}
+	.sub-part-row .projects .text3{
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 1166px){     
+	.sub-part-row .project .button3 {
+		position: relative;
+		left: 20px;
+	}	
+}
+	
